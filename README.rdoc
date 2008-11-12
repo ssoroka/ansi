@@ -1,2 +1,36 @@
 = ANSI
 
+== DESCRIPTION
+
+Use ANSI codes in printed output, including colors and controlling the cursor, clearing the line, and clearing the screen.
+
+== INSTALLATION
+
+as a gem:
+  sudo gem install ssoroka-ruby
+
+as a plugin:
+  script/plugin install git://github.com/ssoroka/ansi.git
+  
+== USAGE
+
+1) Simply control the cursor:
+>> puts "HELLO" + ANSI.right(30) + "THERE!"
+HELLO                              THERE!
+
+2) use colors:
+
+>> puts ANSI.color(:red) { "hello there" }
+>> puts ANSI.color(:green) + "Everything is green now" + ANSI.no_color
+
+3) loops:
+
+printf ANSI.clear_screen
+puts "Processing users..."
+max = User.count
+User.all.each_with_index {|user, index|
+  user.update_something!
+  printf ANSI.left(50) + "Processed #{index}/#{max} users..."
+}
+puts " done!"
+

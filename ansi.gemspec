@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.description = %q{Use ANSI codes in printed output, including colors and controlling the cursor, clearing the line, and clearing the screen.}
   s.email = %q{ssoroka78@gmail.com}
   s.extra_rdoc_files = ["lib/ansi.rb", "README.rdoc"]
-  s.files = ["ansi.gemspec", "lib/ansi.rb", "Manifest", "Rakefile", "README.rdoc", "test/ansi_test.rb"]
+  s.files = ["ansi.gemspec", "init.rb", "lib/ansi.rb", "Manifest", "Rakefile", "README.rdoc", "test/ansi_test.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/ssoroka/ansi}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Ansi", "--main", "README.rdoc"]
