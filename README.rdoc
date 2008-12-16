@@ -7,7 +7,7 @@ Use ANSI codes in printed output, including colors and controlling the cursor, c
 == INSTALLATION
 
 as a gem:
-  sudo gem install ssoroka-ruby
+  sudo gem install ssoroka-ansi
 
 as a plugin:
   script/plugin install git://github.com/ssoroka/ansi.git
